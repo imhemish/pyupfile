@@ -14,4 +14,4 @@ downloadlink = jsonloadedresponse["link"]
 print(downloadlink)
 print("Download Link Copied to Clipboard. Press Enter to Exit.")
 clipboard.copy(downloadlink)
-exitornot = input()
+exit = input()
