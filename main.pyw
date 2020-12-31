@@ -8,10 +8,6 @@ filename = askopenfilename()
 myfiles = {'file': open(filename ,'rb')}
 url = "https://file.io"
 postrequest = requests.post(url, files = myfiles)
-postrequestresponse = postrequest.text
-jsonloadedresponse = json.loads(postrequestresponse)
+jsonloadedresponse = json.loads(postrequest.text)
 downloadlink = jsonloadedresponse["link"]
-print(downloadlink)
-print("Download Link Copied to Clipboard. Press Enter to Exit.")
 clipboard.copy(downloadlink)
-input()
