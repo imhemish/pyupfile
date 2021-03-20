@@ -1,1 +1,0 @@
-from pyupfile.__main__ import main

@@ -27,6 +27,6 @@ python -m pyupfile
 - by importing the 'main' function from the module and using it in other python program:  
 ```python
 import pyupfile
-pyupfile.main()
+pyupfile.__main__.main()
 ```  
 In both the cases, a window would pop up asking you the location of the file to be uploaded and download link would be copied to clipboard.
